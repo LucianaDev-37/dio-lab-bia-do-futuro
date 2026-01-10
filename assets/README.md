@@ -1,6 +1,6 @@
 # 📸 Recursos Visuais do Projeto
 
-Esta pasta é destinada aos **recursos visuais** da aplicação **LucyAcessível IA**, contendo evidências reais do funcionamento do chatbot desenvolvido em Streamlit.
+Esta pasta é destinada aos recursos visuais da aplicação **LucyAcessível IA**, contendo evidências reais do funcionamento do chatbot desenvolvido em Streamlit.
 
 As imagens abaixo demonstram a interface e o comportamento do agente em diferentes cenários de uso.
 
@@ -31,4 +31,4 @@ Exemplo de pergunta correta sobre produtos financeiros básicos e a resposta det
 ---
 
 📌 **Observação:**  
-Essas imagens servem como comprovação visual do funcionamento do protótipo, facilitando a avaliação por professores, recrutadores e revisores do projeto.
+Essas imagens servem como comprovação visual do funcionamento do protótipo, facilitando a avaliação por professores, recrutadores e revisores.
