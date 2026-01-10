@@ -54,6 +54,7 @@ A aplicação foi desenvolvida com:
 
 ▶️ Como Rodar o Projeto
 1️⃣ Clone o repositório
+<<<<<<< HEAD
 git clone <https://github.com/LucianaDev-37/dio-lab-bia-do-futuro>
 
 ---
