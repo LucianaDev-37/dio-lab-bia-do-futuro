@@ -10,7 +10,7 @@ As imagens abaixo demonstram a interface e o comportamento do agente em diferent
 
 Imagem da tela inicial da aplicação ao ser executada, exibindo a interface simples e acessível do chatbot.
 
-![Tela inicial](tela-inicial.png)
+![Tela inicial do chatbot](tela-inicial.png)
 
 ---
 
@@ -18,7 +18,7 @@ Imagem da tela inicial da aplicação ao ser executada, exibindo a interface sim
 
 Exemplo de pergunta que não faz parte do escopo do agente e a resposta segura e controlada retornada pelo sistema.
 
-![Pergunta fora do escopo](pergunta-fora-escopo.png)
+![Pergunta fora do escopo](pergunta-fora-do-escopo.png)
 
 ---
 
