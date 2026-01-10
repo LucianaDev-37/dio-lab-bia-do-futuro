@@ -1,74 +1,111 @@
 # Base de Conhecimento
 
-## Dados Utilizados
+## Estrutura Atual dos Dados
 
-O agente LucyAcessível IA utiliza uma base de conhecimento educacional e acessível, composta por arquivos JSON e CSV armazenados na pasta `data`.
-Esses dados contêm explicações simples sobre produtos financeiros, perguntas frequentes e termos básicos, sem o uso de dados pessoais ou informações sensíveis.
+O agente **LucyAcessível IA** utiliza uma base de conhecimento **simples, controlada e determinística**, implementada diretamente no código da aplicação por meio de **regras baseadas em palavras-chave**, sem uso de modelos generativos.
 
-| Arquivo                    | Formato | Utilização no Agente                                               |
-| -------------------------- | ------- | ------------------------------------------------------------------ |
-| `glossario_financeiro.csv` | CSV     | Explicar termos financeiros em linguagem clara e acessível         |
-| `perfis_usuario.json`      | JSON    | Ajustar linguagem e nível de explicação conforme o tipo de usuário |
-| `produtos_financeiros.json`| JSON    | Explicar produtos financeiros básicos de forma simples             |
-| `perguntas_frequentes.csv` | CSV     | Base principal do motor de regras para responder dúvidas comuns    |
+A lógica do agente é construída em uma função Python que analisa a pergunta do usuário e retorna respostas previamente definidas, garantindo total controle sobre o comportamento do sistema.
 
-> [!TIP]
-Os dados utilizados são mockados e educativos, inspirados em conteúdos públicos de educação financeira, garantindo ética, segurança e acessibilidade.
+Essa abordagem foi escolhida para:
 
----
+- Garantir previsibilidade das respostas  
+- Evitar alucinações  
+- Facilitar auditoria e explicação técnica  
+- Manter o projeto leve e acessível  
+- Tornar o funcionamento compreensível para iniciantes  
 
-## Adaptações nos Dados
-
-Os dados foram criados e adaptados manualmente com foco em acessibilidade e inclusão, seguindo os princípios:
-
-- Linguagem simples e não técnica
-- Frases curtas e objetivas
-- Conteúdo educativo e não persuasivo
-- Ausência de dados sensíveis ou pessoais
-- Estrutura pensada para fácil expansão
+📌 **Não são utilizados arquivos externos (JSON, CSV ou banco de dados) nesta versão do protótipo.**  
+📌 **Não há integração com APIs de IA generativa.**
 
 ---
 
-## Estratégia de Integração
+## Modelo de Funcionamento
 
-### Como os dados são carregados?
+A base de conhecimento é acessada por meio de um **motor de regras**, que verifica se determinadas palavras-chave estão presentes na pergunta do usuário.
 
-Os arquivos JSON e CSV são carregados no início da execução da aplicação, utilizando bibliotecas padrão do Python.
-Após o carregamento, os dados permanecem disponíveis em memória para consulta durante a interação com o usuário.
-
-Essa abordagem garante:
-
-- Baixa complexidade
-- Facilidade de manutenção
-- Transparência no funcionamento do agente
-
-### Como os dados são usados no prompt?
-
-Os dados não são inseridos integralmente no system prompt.
-O agente consulta a base de conhecimento por meio de um motor de regras, que identifica a intenção da pergunta do usuário e direciona a resposta correta, sem gerar respostas livres.
-
-- A intenção é detectada por palavras-chave
-- O agente busca a informação correspondente na base de conhecimento
-- A resposta é construída em linguagem acessível e educativa
-
-Essa estratégia reduz riscos de alucinação e mantém o controle total das respostas.
+Cada conjunto de palavras-chave está associado a uma resposta educativa e acessível sobre produtos financeiros básicos.
 
 ---
 
-## Exemplo de Contexto Montado
+## Conteúdo da Base de Conhecimento
 
-```markdown
-Tipo de usuário: Iniciante
-Nível de linguagem: Simples
+Atualmente, o agente é capaz de responder perguntas relacionadas aos seguintes temas:
 
-Pergunta do usuário:
-"O que é conta poupança?"
+- Conta corrente / conta bancária  
+- Poupança / economia de dinheiro  
+- Cartão de crédito / limite  
+- Empréstimos e financiamentos  
 
-Contexto consultado:
-- Produto: Conta Poupança
-- Descrição simples disponível na base de conhecimento
+As respostas são formuladas em linguagem simples, com foco educativo e acessível.
 
-Resposta da Lucy:
-"Conta poupança é uma forma simples de guardar dinheiro.
-Ela rende um pouco, seguindo regras definidas pelo Banco Central, e é considerada uma opção básica e segura."
+---
+
+## Exemplo de Implementação no Código
+
+```python
+def responder(pergunta):
+    pergunta = pergunta.lower()
+
+    if any(p in pergunta for p in ["conta corrente", "conta bancária", "conta do banco"]):
+        return (
+            "A conta corrente é uma conta bancária usada para receber dinheiro, "
+            "pagar contas e fazer transferências. É indicada para o uso diário."
+        )
+
+    if any(p in pergunta for p in ["poupança", "guardar dinheiro", "economizar"]):
+        return (
+            "A poupança é uma forma simples de guardar dinheiro. "
+            "Ela rende um pouco e é indicada para reservas financeiras."
+        )
+
+    if any(p in pergunta for p in ["cartão", "cartão de crédito", "limite"]):
+        return (
+            "O cartão de crédito permite fazer compras agora e pagar depois. "
+            "É importante usar com cuidado para evitar dívidas."
+        )
+
+    if any(p in pergunta for p in ["empréstimo", "financiamento"]):
+        return (
+            "Um empréstimo é quando o banco empresta dinheiro "
+            "e você devolve em parcelas. Posso explicar os tipos básicos se quiser."
+        )
+
+    return (
+        "Ainda não tenho informações sobre isso. "
+        "Posso ajudar com conta corrente, poupança, cartão de crédito ou empréstimo."
+    )
+
+## Limitações Atuais
+
+O agente **LucyAcessível IA** possui limitações intencionais, definidas de acordo com o escopo educacional do protótipo:
+
+- Responde apenas a temas previamente definidos  
+- Não interpreta contexto complexo ou perguntas ambíguas  
+- Não aprende com novas interações  
+- Não acessa dados externos, APIs ou bases de dados  
+
+Essas limitações garantem previsibilidade, segurança e facilidade de auditoria do comportamento do agente.
+
+---
+
+## Possíveis Evoluções Futuras
+
+Em versões futuras, o projeto pode ser expandido de forma gradual e controlada, incluindo:
+
+- Externalização da base de conhecimento em arquivos JSON  
+- Inclusão de novos produtos e conceitos financeiros  
+- Integração opcional com IA generativa de forma supervisionada  
+- Expansão do vocabulário de palavras-chave e sinônimos  
+- Modularização do código para melhor manutenção  
+
+---
+
+📌 **Observação Final**
+
+A base de conhecimento do agente foi projetada com foco em **clareza, segurança e acessibilidade**, sendo adequada para:
+
+- Demonstrações acadêmicas  
+- Projetos educacionais  
+- Avaliação técnica inicial por professores ou recrutadores  
+
 

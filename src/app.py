@@ -1,31 +1,52 @@
 import streamlit as st
 
-st.set_page_config(page_title="LucyAcessível IA")
+st.set_page_config(
+    page_title="LucyAcessível IA",
+    layout="centered"
+)
 
-st.title('🤖 LucyAcessível IA')
-st.subheader('Assistente financeiro educativo e acessível')
+st.title("🤖 LucyAcessível IA")
+st.subheader("Assistente financeiro educativo e acessível")
 
-pergunta = st.text_input('Digite sua dúvida sobre produtos bancários:')
+st.write(
+    "Digite sua dúvida sobre produtos financeiros básicos, "
+    "como conta corrente, poupança, cartão de crédito ou empréstimo."
+)
 
-respostas = {
-    'conta': 'Uma conta bancária permite guardar dinheiro, fazer pagamentos e transferências.',
-    'poupança': 'A poupança é um investimento de baixo risco, indicado para quem busca segurança.',
-    'cartão': 'O cartão de crédito permite compras agora e pagamento posterior.'
-}
+def responder(pergunta):
+    pergunta = pergunta.lower()
 
-if pergunta:
-    pergunta_lower = pergunta.lower()
-
-    resposta_encontrada = None
-    for chave in respostas:
-        if chave in pergunta_lower:
-            resposta_encontrada = respostas[chave]
-            break
-
-    if resposta_encontrada:
-        st.success(resposta_encontrada)
-    else:
-        st.warning(
-            'Ainda não tenho informações sobre isso. '
-            'Posso ajudar com conta corrente, poupança ou cartão de crédito.'
+    if any(p in pergunta for p in ["conta corrente", "conta bancária", "conta do banco"]):
+        return (
+            "A conta corrente é uma conta bancária usada para receber dinheiro, "
+            "pagar contas e fazer transferências. É indicada para o uso diário."
         )
+
+    if any(p in pergunta for p in ["poupança", "guardar dinheiro", "economizar"]):
+        return (
+            "A poupança é uma forma simples de guardar dinheiro. "
+            "Ela rende um pouco e é indicada para reservas financeiras."
+        )
+
+    if any(p in pergunta for p in ["cartão", "cartão de crédito", "limite"]):
+        return (
+            "O cartão de crédito permite fazer compras agora e pagar depois. "
+            "É importante usar com cuidado para evitar dívidas."
+        )
+
+    if any(p in pergunta for p in ["empréstimo", "financiamento"]):
+        return (
+            "Um empréstimo é quando o banco empresta dinheiro "
+            "e você devolve em parcelas. Posso explicar os tipos básicos se quiser."
+        )
+
+    return (
+        "Ainda não tenho informações sobre isso. "
+        "Posso ajudar com conta corrente, poupança, cartão de crédito ou empréstimo."
+    )
+
+pergunta_usuario = st.text_input("Digite sua pergunta:")
+
+if pergunta_usuario:
+    resposta = responder(pergunta_usuario)
+    st.success(resposta)

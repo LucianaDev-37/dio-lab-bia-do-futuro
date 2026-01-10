@@ -9,7 +9,7 @@ Muitas pessoas têm dificuldade em compreender produtos financeiros como contas 
 ### Solução
 
 O agente atua como um assistente financeiro acessível, capaz de explicar produtos bancários de forma clara e simples.
-Utilizando processamento de linguagem natural simples e um motor de regras, o agente identifica a intenção do usuário, consulta uma base de conhecimento estruturada e retorna respostas educativas, seguras e adaptadas à acessibilidade, sem depender de APIs pagas ou modelos proprietários.
+Utilizando **análise simples de texto baseada em palavras-chave** e um motor de regras, o agente identifica a intenção do usuário e retorna respostas educativas, seguras e acessíveis, sem depender de APIs pagas ou modelos proprietários.
 
 ### Público-Alvo
 
@@ -91,27 +91,22 @@ style LLM fill:#F5D6D6,stroke:#F44336,stroke-width:2px
 
 ### Componentes
 
-| Componente   |   Descrição  |
-|--------------|--------------|
-
+| Componente | Descrição |
+| --------- | ---------- |
 | Interface | Aplicação web em Streamlit, com foco em acessibilidade |
-| NLP Simples | Identifica intenções usando palavras-chave e normaliza o texto do usuário |
-| Motor de Regras | Analisa intenção do usuário e consulta a base de conhecimento para gerar respostas educativas |
-| Base de Conhecimento | Arquivos JSON/CSV com dados sobre produtos financeiros, termos e perguntas frequentes |
-| Validação | Garante que respostas permaneçam dentro da base de conhecimento, mantendo segurança |
-
----
+| Análise de Texto | Identificação de intenção baseada em palavras-chave |
+| Motor de Regras | Analisa a intenção do usuário e retorna respostas pré-definidas |
+| Base de Conhecimento | Dicionário Python com explicações sobre produtos financeiros |
+| Validação | Garante respostas controladas e dentro do escopo |
 
 ## Segurança e Anti-Alucinação
 
 ### Estratégias Adotadas
 
-- [x] Agente só responde com base nos dados fornecidos
-- [x] Respostas incluem fonte da informação
-- [x] Quando não sabe, admite e redireciona
-- [x] Não faz recomendações financeiras sem perfil do cliente
-- [x] Simulações são educativas e demonstrativas
-- [x] Linguagem clara e não persuasiva
+- [x] Agente responde apenas com base no conteúdo definido no código
+- [x] Não gera conteúdo livre ou inferências
+- [x] Quando não reconhece a intenção, retorna resposta neutra
+- [x] Não realiza recomendações financeiras personalizadas
 
 ### Limitações Declaradas
 
