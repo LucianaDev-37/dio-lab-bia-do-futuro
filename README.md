@@ -107,6 +107,8 @@ lucyacessivel-ia/
 │   └── 05-pitch.md
 └── data/
     └── README.md
+```
+
 ---
 
 ### 🔐 Segurança e Confiabilidade
