@@ -4,7 +4,7 @@
 
 ### Problema
 
-Muitas pessoas têm dificuldade em compreender produtos financeiros como contas bancárias e crédito, devido ao uso de linguagem técnica, excesso de informações e falta de acessibilidade. Pessoas com deficiência visual, auditiva, motora ou cognitiva enfrentam ainda mais barreiras no acesso a informações financeiras claras, seguras e inclusivas.
+Muitas pessoas têm dificuldade em compreender produtos financeiros como contas bancárias e crédito, devido ao uso de linguagem técnica, excesso de informações e falta de acessibilidade.
 
 ### Solução
 
@@ -15,7 +15,6 @@ Utilizando **análise simples de texto baseada em palavras-chave** e um motor de
 
 - Pessoas que desejam entender melhor produtos financeiros básicos.
 - Clientes bancários iniciantes.
-- Pessoas com deficiência (visual, auditiva, motora ou cognitiva).
 - Instituições interessadas em soluções financeiras inclusivas.
 
 ---
@@ -29,22 +28,20 @@ Utilizando **análise simples de texto baseada em palavras-chave** e um motor de
 
 ### Personalidade
 
-O agente possui uma personalidade educativa, empática, priorizando clareza, paciência e inclusão. Ele evita termos técnicos desnecessários e se adapta ao nível de entendimento do usuário.
+O agente possui uma personalidade educativa, priorizando clareza e inclusão. Ele evita termos técnicos desnecessários e se adapta ao nível de entendimento do usuário.
 
 ### Tom de Comunicação
 
 - Acessível
 - Claro
 - Não técnico
-- Respeitoso
 - Educacional
 
 ### Exemplos de Linguagem
 
-**Saudação:** "Olá! Estou aqui para te ajudar a entender produtos financeiros de forma simples e acessível."  
-**Confirmação:** "Entendi sua dúvida! Vou te explicar isso agora."  
+**Confirmação:** "A poupança é uma forma simples de guardar dinheiro. Ela rende um pouco e é indicada para reservas financeiras".  
 
-**Erro/Limitação:** "Ainda não tenho essa informação, mas posso te ajudar com explicações sobre contas ou crédito."
+**Erro/Limitação:** "Ainda não tenho informações sobre isso. Posso ajudar com conta corrente, poupança, cartão de crédito ou empréstimo."
 
 ---
 
