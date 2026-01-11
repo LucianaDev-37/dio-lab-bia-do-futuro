@@ -55,31 +55,32 @@ O diagrama abaixo compara o fluxo do projeto atual (rule-based) com uma possíve
 
 ### Diagrama
 <!-- Diagrama comparativo: Rule-Based vs IA Generativa -->
-```mermaid
+
 flowchart TD
-subgraph RULE_BASED [LucyAcessível IA - Rule-Based]
-    A1[Usuário envia pergunta] --> B1[Motor de regras identifica intenção]
+    subgraph RULE_BASED [LucyAcessível IA - Baseada em Regras]
+        A1[Usuário envia pergunta] --> B1[Motor de regras identifica intenção]
         B1 --> C1[Consulta base de conhecimento]
-        C1 --> D1[Constrói resposta educativa]
+        C1 --> D1[Resposta educativa fixa]
         D1 --> E1[Envia resposta ao usuário]
     end
 
-subgraph LLM [LucyAcessível IA - IA Generativa]
-    A2[Usuário envia pergunta] --> B2[IA processa texto livremente]
-        B2 --> C2[Modelo gera resposta com base no aprendizado]
-        C2 --> D2[Resposta pode precisar de verificação]
+    subgraph LLM_GEN [LucyAcessível IA - IA Generativa]
+        A2[Usuário envia pergunta] --> B2[IA processa texto livremente]
+        B2 --> C2[Modelo gera resposta via probabilidade]
+        C2 --> D2[Resposta com risco de erro]
         D2 --> E2[Envia resposta ao usuário]
     end
 
-style RULE_BASED fill:#D6F5D6,stroke:#4CAF50,stroke-width:2px
-style LLM fill:#F5D6D6,stroke:#F44336,stroke-width:2px
+    style RULE_BASED fill:#D6F5D6,stroke:#4CAF50,stroke-width:2px
+    style LLM_GEN fill:#F5D6D6,stroke:#F44336,stroke-width:2px
 
-    F[Observações] --> RULE_BASED
-    F --> LLM
-    F[Observações: Rule-based = leve, controlado, seguro | LLM = fluido, mas pesado, risco de alucinação]
+    obs[Observações]
+    obs --> RULE_BASED
+    obs --> LLM_GEN
+    
+    obs["Observações: Regras = leve e seguro | LLM = fluido mas com risco de alucinação"]
 
-
-```
+---
 
 ### Legenda das cores
 
