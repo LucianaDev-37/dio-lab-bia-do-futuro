@@ -75,6 +75,7 @@ pip install -r src/requirements.txt
 ### 3️⃣ Execute a aplicação
 
 ---
+streamlit run src/app.py
 
 A aplicação será aberta automaticamente no navegador.
 

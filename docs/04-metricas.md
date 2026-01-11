@@ -30,11 +30,6 @@ São utilizadas duas abordagens complementares:
 
 ---
 
-> [!TIP]  
-> Recomenda-se que **3 a 5 pessoas** testem o agente (amigos, familiares ou colegas)  
-> e atribuam notas de **1 a 5** para cada métrica.  
-> Isso aumenta a confiabilidade da avaliação qualitativa do protótipo.
-
 ---
 
 ## Exemplos de Cenários de Teste
@@ -45,10 +40,10 @@ São utilizadas duas abordagens complementares:
   “O que é uma conta poupança?”
 
 - **Resposta esperada:**  
-  Explicação simples sobre guardar dinheiro e rendimento básico
+  A poupança é uma forma simples de guardar dinheiro. Ela rende um pouco e é indicada para reservas financeiras.
 
 - **Resultado:**  
-  [ ] Correto [ ] Incorreto
+  [x] Correto [ ] Incorreto
 
 ---
 
@@ -58,10 +53,10 @@ São utilizadas duas abordagens complementares:
   “Como funciona o cartão de crédito?”
 
 - **Resposta esperada:**  
-  Explicação clara sobre compras agora e pagamento posterior
+  O cartão de crédito permite fazer compras agora e pagar depois. É importante usar com cuidado para evitar dívidas.
 
 - **Resultado:**  
-  [ ] Correto [ ] Incorreto
+  [x] Correto [ ] Incorreto
 
 ---
 
@@ -71,10 +66,10 @@ São utilizadas duas abordagens complementares:
   “Qual a previsão do tempo para amanhã?”
 
 - **Resposta esperada:**  
-  Agente informa que responde apenas sobre temas financeiros básicos
+ Ainda não tenho informações sobre isso. Posso ajudar com conta corrente, poupança, cartão de crédito ou empréstimo.
 
 - **Resultado:**  
-  [ ] Correto [ ] Incorreto
+  [ ] Correto [x] Incorreto
 
 ---
 
@@ -84,10 +79,10 @@ São utilizadas duas abordagens complementares:
   “Quanto rende um produto que não existe?”
 
 - **Resposta esperada:**  
-  Agente admite que não possui essa informação
+  Ainda não tenho informações sobre isso. Posso ajudar com conta corrente, poupança, cartão de crédito ou empréstimo.
 
 - **Resultado:**  
-  [ ] Correto [ ] Incorreto
+  [ ] Correto [x] Incorreto
 
 ---
 
@@ -97,10 +92,10 @@ São utilizadas duas abordagens complementares:
   “Você pode transferir dinheiro para mim?”
 
 - **Resposta esperada:**  
-  Agente informa que não realiza transações financeiras
+  Ainda não tenho informações sobre isso. Posso ajudar com conta corrente, poupança, cartão de crédito ou empréstimo.
 
 - **Resultado:**  
-  [ ] Correto [ ] Incorreto
+  [ ] Correto [x] Incorreto
 
 ---
 
@@ -110,7 +105,6 @@ Após a execução dos testes, os resultados esperados são:
 
 ### Pontos Fortes
 
-- Clareza das explicações  
 - Respostas seguras e previsíveis  
 - Ausência de alucinação  
 - Linguagem acessível e educativa  
@@ -134,4 +128,4 @@ Por se tratar de um agente **determinístico e baseado em regras**, as métricas
 
 Métricas como consumo de tokens, custo por requisição ou precisão estatística de modelos **não se aplicam** a este projeto, pois não há uso de modelos de IA generativa nem APIs externas.
 
-📌 Este modelo de avaliação é adequado para **projetos educacionais, acadêmicos e protótipos técnicos iniciais**.
+📌 Este modelo de avaliação é adequado para **projetos educacionais e protótipos técnicos iniciais**.
