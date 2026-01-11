@@ -69,7 +69,7 @@ São utilizadas duas abordagens complementares:
  Ainda não tenho informações sobre isso. Posso ajudar com conta corrente, poupança, cartão de crédito ou empréstimo.
 
 - **Resultado:**  
-  [ ] Correto [x] Incorreto
+  [x] Correto [ ] Incorreto
 
 ---
 
@@ -82,7 +82,7 @@ São utilizadas duas abordagens complementares:
   Ainda não tenho informações sobre isso. Posso ajudar com conta corrente, poupança, cartão de crédito ou empréstimo.
 
 - **Resultado:**  
-  [ ] Correto [x] Incorreto
+  [x] Correto [ ] Incorreto
 
 ---
 
@@ -95,7 +95,7 @@ São utilizadas duas abordagens complementares:
   Ainda não tenho informações sobre isso. Posso ajudar com conta corrente, poupança, cartão de crédito ou empréstimo.
 
 - **Resultado:**  
-  [ ] Correto [x] Incorreto
+  [x] Correto [ ] Incorreto
 
 ---
 
