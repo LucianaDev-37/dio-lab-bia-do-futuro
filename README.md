@@ -91,27 +91,22 @@ Esses registros comprovam o funcionamento do protótipo.
 
 ### 📂 Estrutura do Repositório
 
+```text
 lucyacessivel-ia/
-│
 ├── README.md
-│
 ├── src/
 │   ├── app.py
 │   └── requirements.txt
-│
 ├── assets/
 │   └── imagens/
-│
 ├── docs/
 │   ├── 01-documentacao-agente.md
 │   ├── 02-base-conhecimento.md
 │   ├── 03-prompts.md
 │   ├── 04-metricas.md
 │   └── 05-pitch.md
-│
 └── data/
     └── README.md
-
 ---
 
 ### 🔐 Segurança e Confiabilidade
