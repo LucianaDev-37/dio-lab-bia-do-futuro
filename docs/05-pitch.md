@@ -30,8 +30,7 @@ Seu foco é **educação financeira**, **acessibilidade digital** e **confiança
 Durante a demonstração, são apresentados os seguintes cenários:
 
 - O usuário perguntando o que é uma conta poupança  
-- O agente respondendo com linguagem simples e acessível  
-- Um exemplo de dúvida sobre cartão de crédito  
+- O agente respondendo com linguagem simples e acessível
 - Uma pergunta fora do escopo, onde o agente admite a limitação e redireciona corretamente  
 
 A demonstração evidencia o controle das respostas e o foco educacional do agente.
@@ -58,7 +57,7 @@ O impacto está em tornar a educação financeira mais inclusiva, reduzindo barr
 - [x] Problema claramente definido  
 - [x] Solução demonstrada na prática  
 - [x] Diferencial explicado  
-- [x] Áudio e vídeo com boa qualidade  
+- [x] Áudio e vídeo  
 
 ---
 
