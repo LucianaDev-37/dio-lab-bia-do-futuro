@@ -5,8 +5,6 @@
 Muitas pessoas têm dificuldade em entender produtos financeiros básicos, como conta corrente, cartão de crédito e poupança.  
 Essas dificuldades aumentam quando a linguagem usada pelos bancos é técnica, extensa e pouco acessível.
 
-Pessoas com deficiência visual, cognitiva ou com pouco letramento financeiro enfrentam ainda mais barreiras para acessar informações claras, seguras e inclusivas no ambiente digital.
-
 ---
 
 ### 2. A Solução (1 minuto)
