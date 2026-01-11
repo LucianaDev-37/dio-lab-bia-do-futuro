@@ -4,10 +4,10 @@
 
 **LucyAcessível IA** é um assistente financeiro educativo, desenvolvido como um **protótipo funcional**, com foco em:
 
-- acessibilidade  
-- clareza na comunicação  
-- segurança das respostas  
-- ausência de alucinações  
+- acessibilidade
+- clareza na comunicação
+- segurança das respostas
+- ausência de alucinações
 
 O agente responde dúvidas básicas sobre **produtos financeiros**, utilizando um **motor de regras baseado em palavras-chave**, garantindo respostas **determinísticas e auditáveis**.
 
@@ -17,13 +17,12 @@ O agente responde dúvidas básicas sobre **produtos financeiros**, utilizando u
 
 Criar um chatbot simples e funcional, capaz de:
 
-- explicar conceitos financeiros básicos  
-- atender usuários iniciantes  
-- evitar respostas especulativas ou inseguras  
-- demonstrar, na prática, o uso de **IA baseada em regras** no contexto financeiro  
+- explicar conceitos financeiros básicos
+- atender usuários iniciantes
+- evitar respostas especulativas ou inseguras
+- demonstrar, na prática, o uso de **IA baseada em regras** no contexto financeiro
 
-📌 **Importante:**  
-Este projeto **não utiliza IA generativa**.
+📌 **Importante:** Este projeto **não utiliza IA generativa**.
 
 ---
 
@@ -31,11 +30,11 @@ Este projeto **não utiliza IA generativa**.
 
 - ✅ Chat interativo via **Streamlit**
 - ✅ Responde perguntas sobre:
-  - conta bancária  
-  - poupança  
-  - cartão de crédito  
-- ✅ Trata perguntas fora do escopo com mensagem segura  
-- ✅ Interface simples e acessível  
+  - conta bancária
+  - poupança
+  - cartão de crédito
+- ✅ Trata perguntas fora do escopo com mensagem segura
+- ✅ Interface simples e acessível
 
 ---
 
@@ -43,37 +42,43 @@ Este projeto **não utiliza IA generativa**.
 
 A aplicação foi desenvolvida com:
 
-- Python  
-- Streamlit  
-- Motor de regras por palavras-chave  
-- Código concentrado em um único arquivo (`app.py`)  
+- Python
+- Streamlit
+- Motor de regras por palavras-chave
+- Código concentrado em um único arquivo (`app.py`)
 
 📁 **Código:** `src/app.py`
 
 ---
 
-▶️ Como Rodar o Projeto
-1️⃣ Clone o repositório
+## ▶️ Como Rodar o Projeto
 
-git clone <https://github.com/LucianaDev-37/dio-lab-bia-do-futuro>
+### 1️⃣ Clone o repositório
+
+```bash
+git clone https://github.com/LucianaDev-37/LucyAcessivel-IA
+
+
+```
 
 ---
 
-2️⃣ Instale as dependências
+### 2️⃣ Instale as dependências
 
 pip install -r src/requirements.txt
 
 ---
 
-3️⃣ Execute a aplicação
+### 3️⃣ Execute a aplicação
 
----=
+---
 
 A aplicação será aberta automaticamente no navegador.
 
 ---
 
-📸 Demonstração da Aplicação
+### 📸 Demonstração da Aplicação
+
 Imagens da aplicação em funcionamento estão disponíveis na pasta `assets`:
 
 - Tela inicial do chatbot
@@ -83,7 +88,9 @@ Imagens da aplicação em funcionamento estão disponíveis na pasta `assets`:
 Esses registros comprovam o funcionamento do protótipo.
 
 ---
-📂 Estrutura do Repositório
+
+### 📂 Estrutura do Repositório
+
 lucyacessivel-ia/
 │
 ├── README.md
@@ -107,7 +114,7 @@ lucyacessivel-ia/
 
 ---
 
-🔐 Segurança e Confiabilidade
+### 🔐 Segurança e Confiabilidade
 
 - Não há uso de LLMs
 - Não há geração de texto livre
