@@ -55,7 +55,7 @@ O diagrama abaixo compara o fluxo do projeto atual (rule-based) com uma possíve
 
 ### Diagrama
 <!-- Diagrama comparativo: Rule-Based vs IA Generativa -->
-mermaid**
+```mermaid
 flowchart TD
     subgraph RULE_BASED [LucyAcessível IA - Baseada em Regras]
         A1[Usuário envia pergunta] --> B1[Motor de regras identifica intenção]
@@ -77,9 +77,9 @@ flowchart TD
     obs[Observações]
     obs --> RULE_BASED
     obs --> LLM_GEN
-    
+
     obs["Observações: Regras = leve e seguro | LLM = fluido mas com risco de alucinação"]
-**
+```
 
 ---
 
