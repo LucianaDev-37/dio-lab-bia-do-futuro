@@ -1,10 +1,5 @@
 # Pitch (3 minutos)
 
-> [!TIP]
-> Você pode usar alguns slides para apoiar no seu pitch e mostrar sua solução na prática.
-
-## Roteiro Sugerido
-
 ### 1. O Problema (30 segundos)
 
 Muitas pessoas têm dificuldade em entender produtos financeiros básicos, como conta corrente, cartão de crédito e poupança.  
